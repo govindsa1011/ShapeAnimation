@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="28dp"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:elevation="8dp"
+        android:rotation="36"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="lollipop" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="56dp"
+        android:layout_height="match_parent"
+        android:alpha="0.25"
+        android:background="#fff"
+        android:elevation="5dp"
+        android:rotation="36"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="lollipop" />
+
+    <com.github.florent37.shapeofview.shapes.DiagonalView
+        android:id="@+id/view2"
+        android:layout_width="36dp"
+        android:layout_height="match_parent"
+        android:elevation="3dp"
+        android:rotation="36"
+        app:layout_constraintEnd_toStartOf="@+id/image"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shape_diagonal_angle="-20"
+        app:shape_diagonal_position="top"
+        tools:targetApi="lollipop">
+
+        <View
+            android:layout_width="36dp"
+            android:layout_height="match_parent"
+            android:background="#fff" />
+    </com.github.florent37.shapeofview.shapes.DiagonalView>
+
+    <com.github.florent37.shapeofview.shapes.DiagonalView
+        android:id="@+id/view3"
+        android:layout_width="36dp"
+        android:layout_height="match_parent"
+        android:elevation="3dp"
+        android:rotation="36"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/image"
+        app:shape_diagonal_angle="20"
+        app:shape_diagonal_position="bottom"
+        tools:targetApi="lollipop">
+
+        <View
+            android:layout_width="36dp"
+            android:layout_height="match_parent"
+            android:background="#fff" />
+    </com.github.florent37.shapeofview.shapes.DiagonalView>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        android:src="@drawable/ic_puma_energy_logo"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="lollipop" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
