@@ -1,6 +1,5 @@
 package com.example.shapeanimation
 
-import android.graphics.drawable.ShapeDrawable
 import android.os.Bundle
 import android.os.Handler
 import android.view.Window
@@ -17,6 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         view?.setOnClickListener {
             animation()
+            view?.isEnabled = false
         }
 
 //        view2?.background = ShapeDrawable(WeirdShape())

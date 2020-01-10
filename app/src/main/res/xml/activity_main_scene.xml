@@ -6,7 +6,7 @@
     <Transition
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@id/start"
-        motion:duration="5000">
+        motion:duration="3000">
         <KeyFrameSet>
             <KeyAttribute
                 motion:motionTarget="@+id/view"
@@ -166,8 +166,6 @@
             android:background="#fff"
             android:rotation="36"
             android:elevation="8dp"
-            android:layout_marginStart="4dp"
-            android:layout_marginLeft="4dp"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
@@ -235,8 +233,6 @@
             android:background="#fff"
             android:rotation="36"
             android:elevation="8dp"
-            android:layout_marginStart="4dp"
-            android:layout_marginLeft="4dp"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
