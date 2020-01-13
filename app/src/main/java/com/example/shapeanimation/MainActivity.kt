@@ -19,9 +19,6 @@ class MainActivity : AppCompatActivity() {
             view?.isEnabled = false
         }
 
-//        view2?.background = ShapeDrawable(WeirdShape())
-//        view3?.background = ShapeDrawable(WeirdShape())
-
         view?.performClick()
     }
 
